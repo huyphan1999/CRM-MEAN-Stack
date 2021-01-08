@@ -1,0 +1,23 @@
+.title-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.countCart {
+  position: absolute;
+}
+
+h1,
+h5,
+p {
+  color: #fff;
+}

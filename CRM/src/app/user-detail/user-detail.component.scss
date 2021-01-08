@@ -1,0 +1,25 @@
+.header-crm {
+  margin-left: 15px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-right: -5px;
+  border-bottom: solid 1px;
+  i {
+    font-size: 35px;
+    margin-left: 20px;
+    outline: none;
+  }
+  .buttons {
+    display: flex;
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      :hover {
+        border-bottom: solid;
+      }
+    }
+  }
+}

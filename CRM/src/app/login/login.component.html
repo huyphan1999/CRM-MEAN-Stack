@@ -1,0 +1,61 @@
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100">
+      <form class="login100-form validate-form">
+        <span class="login100-form-title"> Account Login </span>
+
+        <div class="wrap-input100 validate-input mt-5">
+          <input
+            class="input100"
+            type="text"
+            (keyup)="keyUpUsername($event)"
+            placeholder="Username"
+          />
+          <span class="focus-input100-1"></span>
+          <span class="focus-input100-2"></span>
+        </div>
+
+        <div class="wrap-input100 rs1 validate-input">
+          <input
+            class="input100"
+            type="password"
+            (keyup)="keyUpPassword($event)"
+            placeholder="Password"
+          />
+          <span class="focus-input100-1"></span>
+          <span class="focus-input100-2"></span>
+        </div>
+
+        <div class="container-login100-form-btn mt-3" (click)="login()">
+          <button class="login100-form-btn">Sign in</button>
+        </div>
+
+        <div class="d-flex justify-content-center">OR</div>
+
+        <div class="d-flex">
+          <div class="container-login100-form-btn mt-3 oauth" (click)="loginWithFb()">
+            <button class="login100-form-btn oauth-fb">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <span> Facebook </span>
+            </button>
+          </div>
+
+          <div
+            class="mt-3"
+            style="width: 1px; height: 60px; background-color: black"
+          ></div>
+
+          <div
+            class="container-login100-form-btn mt-3 oauth"
+            (click)="loginWithGoogle()"
+          >
+            <button class="login100-form-btn oauth-gg">
+              <i class="fa fa-google" aria-hidden="true"></i>
+              <span>Google </span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

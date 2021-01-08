@@ -1,0 +1,13 @@
+<app-header title="CRM"></app-header>
+<div class="full-container">
+  <div class="list-container">
+    <app-user-list
+      (clickItemEvent)="clickItem($event)"
+      [userList]="userList"
+    ></app-user-list>
+  </div>
+  <div class="detail-container">
+    <app-user-detail [reloadList]="reloadList" [user]="user" [isEdit]="isEdit">
+    </app-user-detail>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="header-crm">
+    <h2>Users</h2>
+  </div>
+  <div *ngFor="let user of userList">
+    <div class="card item" (click)="clickItem(user)">
+      <div class="card-body">
+        <h3>
+          Name: <b>{{ user.name }}</b>
+        </h3>
+        <p class="mt-2">Status :{{ user.status }}</p>
+        <p class="mt-2">{{ user.notes }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.full-container {
+  display: flex;
+  .list-container {
+    width: 500px;
+  }
+  .detail-container {
+    width: 100%;
+  }
+}

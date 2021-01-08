@@ -1,0 +1,128 @@
+<div class="container">
+  <form *ngIf="!submitted">
+    <div class="header-crm">
+      <h2>{{ !isEdit ? "Add new product" : "Detail Product" }}</h2>
+      <div class="buttons">
+        <button>
+          <i class="fa fa-plus" (click)="createUser()" aria-hidden="true"></i>
+        </button>
+        <button>
+          <i class="fa fa-floppy-o" aria-hidden="true" (click)="save()"></i>
+        </button>
+        <button>
+          <i class="fa fa-trash-o" aria-hidden="true" (click)="del()"></i>
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col">
+        <label for="inputProductName" class="col-sm-2 col-form-label"
+          >Name</label
+        >
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            required
+            [(ngModel)]="inputUser.name"
+            name="name"
+          />
+        </div>
+      </div>
+      <div class="form-group col">
+        <label for="inputPrice" class="col-sm-2 col-form-label">Status</label>
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            id="price"
+            required
+            [(ngModel)]="inputUser.status"
+            name="price"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group col">
+        <label for="inputAmount" class="col-sm-2 col-form-label">Email</label>
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            id="amount"
+            required
+            [(ngModel)]="inputUser.email"
+            name="amount"
+          />
+        </div>
+      </div>
+      <div class="form-group col">
+        <label for="inputDescription" class="col-sm-2 col-form-label"
+          >Contact</label
+        >
+        <div class="col">
+          <input
+            class="form-control"
+            aria-label="With textarea"
+            id="description"
+            required
+            [(ngModel)]="inputUser.contact"
+            name="description"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group col">
+        <label for="inputManufacturer" class="col-sm-2 col-form-label"
+          >Website</label
+        >
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            id="manufacturer"
+            required
+            [(ngModel)]="inputUser.website"
+            name="manufacturer"
+          />
+        </div>
+      </div>
+      <div class="form-group col">
+        <label for="inputCategory" class="col-sm-2 col-form-label">Phone</label>
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            id="category"
+            required
+            [(ngModel)]="inputUser.phone"
+            name="category"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group col">
+        <label for="inputDescription" class="col-sm-2 col-form-label"
+          >Notes</label
+        >
+        <div class="col">
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            id="description"
+            required
+            [(ngModel)]="inputUser.notes"
+            name="description"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
